@@ -528,16 +528,21 @@ body.nav-active { overflow: hidden; }
   right: 0;
   bottom: 0;
   background-color: var(--gold-crayola);
-  z-index: -10;
+  z-index: 7;
   display: grid;
   place-content: center;
   justify-items: center;
-  transition: var(--transition-2);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(0);
 }
 
-.preload > * { transition: var(--transition-1); }
+.preload > * {
+  transition: opacity 0.5s ease;
+}
 
-.preload.loaded > * { opacity: 0; }
+.preload.loaded > * {
+  opacity: 0;
+}
 
 .preload.loaded {
   transition-delay: 250ms;
