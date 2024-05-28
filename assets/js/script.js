@@ -13,12 +13,6 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
-window.addEventListener("scroll", function () {
-  if (preloader.classList.contains("loaded")) {
-    preloader.style.display = "none";
-  }
-});
-
 /**
  * add event listener on multiple elements
  */
