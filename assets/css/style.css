@@ -528,7 +528,7 @@ body.nav-active { overflow: hidden; }
   right: 0;
   bottom: 0;
   background-color: var(--gold-crayola);
-  z-index: 1;
+  z-index: 0;
   display: grid;
   place-content: center;
   justify-items: center;
@@ -541,7 +541,7 @@ body.nav-active { overflow: hidden; }
 
 .preload.loaded {
   transition-delay: 250ms;
-  transform: translateY(1000%);
+  transform: translateY(100%);
 }
 
 .circle {
