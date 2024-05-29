@@ -363,6 +363,8 @@ a.btn {
       display: inline-block;
       text-decoration: none;
       white-space: nowrap; /* Prevents the text from wrapping */
+      justify-content: center;
+      align-items: center;
     }
 
     .text {
