@@ -537,11 +537,13 @@ body.nav-active { overflow: hidden; }
 
 .preload > * { transition: var(--transition-1); }
 
-.preload.loaded > * { opacity: 0; z-index: -10; dsiplay: none; }
+.preload.loaded > * { opacity: 0; }
 
 .preload.loaded {
   transition-delay: 250ms;
-  transform: translateY(100%);
+  transform: translateY(100%);  
+  opacity: 0; /* Fully fade out */
+  visibility: hidden; /* Ensure it's hidden */
 }
 
 .circle {
