@@ -537,7 +537,7 @@ body.nav-active { overflow: hidden; }
 
 .preload > * { transition: var(--transition-1); }
 
-.preload.loaded > * { opacity: 0; }
+.preload.loaded > * { opacity: 0; z-index:-10; }
 
 .preload.loaded {
   transition-delay: 250ms;
