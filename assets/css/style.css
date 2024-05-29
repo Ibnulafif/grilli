@@ -359,7 +359,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .btn .text { transition: var(--transition-1); min-width: max-content; }
-
+.btn .text-1 { min-width: max-content; }
 .btn .text-2 {
   position: absolute;
   top: 100%;
