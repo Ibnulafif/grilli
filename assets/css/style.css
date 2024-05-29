@@ -359,7 +359,19 @@ body.nav-active { overflow: hidden; }
 }
 
 .btn .text { transition: var(--transition-1); min-width: max-content; }
-.btn .text-1 { min-width: max-content; }
+a.btn {
+      display: inline-block;
+      text-decoration: none;
+      white-space: nowrap; /* Prevents the text from wrapping */
+    }
+
+    .text {
+      display: inline;
+    }
+
+    .text-1, .text-2 {
+      display: inline-block;
+    }
 .btn .text-2 {
   position: absolute;
   top: 100%;
